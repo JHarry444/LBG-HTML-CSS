@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Quick Lab 6 - CSS Selectors</title>
+    <style>
+        { color: fuchsia; }     /** Anything emboldened **/
+        { color: midnightblue; }        /** Anything emboldened inside a paragraph **/
+        { color: purple; }      /** Any footer that is a direct child of body **/
+        { color: teal; }        /** Any paragraph that is a direct sibling of a heading 1 **/
+        { color: yellow; }      /** Any paragraph that is a younger sibling of a heading 1 **/
+        { color: navy; }        /** Any paragraph that has a class of interactive **/
+        { color: lime;}         /** Any paragraph that has a class of interactive and hovered over **/
+        { color: red;}          /** An element with an id of special **/
+        
+        {                       /** Any articles, headers, navs, uls, lis and footers **/
+            margin: 1em;
+            padding: 1em;
+            outline: 4px dashed black;
+        }
+        
+        {                       /** Any links **/
+            color: blue;
+        }
+
+        {                       /** Any unordered list that is a child of a nav **/
+            list-style: none;
+        }
+
+        { background-color: #0094ff; }        /** First-child list items **/
+        { background-color: #0094ff; }        /** Last-child list items **/ 
+        { background-color: #0094ff; }        /** Third-child list items **/
+        { background-color: #b6ff00; }        /** Odd-children list items **/
+        { background-color: #1d1bc6; }        /** Even-children list items **/
+        { background-color: #ff0000; }        /** Everything but the first-child list item **/
+        { background-color: #00ff00; }        /** The first paragraph **/
+        { background-color: #0000ff; }        /** The last paragraph **/
+        { background-color: aquamarine; }     /** A label with a for attribute of name **/
+        { background-color: hotpink; }        /** An input with a type attribute of email **/
+    </style>
+</head>
+<body>
+    <h1> A <em>heading</em></h1>
+    <p>A paragraph <em>with emphasis</em></p>
+    <header>
+        <h1>Header</h1>
+        <nav>
+            <ul>
+                <li><a href="#item1">Item 1</a></li>
+                <li><a href="#item2">Item 2</a></li>
+                <li><a href="#item3">Item 3</a></li>
+                <li><a href="#item4">Item 4</a></li>
+                <li><a href="#item5">Item 5</a></li>
+                <li><a href="#item6">Item 6</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+            <h1>Article</h1>
+            <p>paragraph 1</p>
+            <p>paragraph 2</p>
+            <img src="QA_text_blue.png">
+            <footer>Article footer</footer>
+    </article>
+    <footer>
+           Body footer
+    </footer>
+    <p class="interactive">hover me</p>
+    <article>
+        <h1>Article</h1>
+        <p>Paragraph 1</p>
+        <p>Paragraph 2</p>
+        <blockquote>Quote</blockquote>
+        <p id="special">Paragraph 3</p>
+        <footer>Article footer</footer>
+    </article>
+    <article>
+        <p><a href="#news1">Jump to New content 1</a></p>
+        <p><a href="#news2">Jump to New content 2</a></p>
+        <p id="news1">New content 1</p>
+        <p id="news2">New content 2</p>
+    </article>
+    <footer>Body footer</footer>
+</body>
+</html>
