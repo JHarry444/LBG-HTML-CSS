@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuickLab 10 - Tables and CSS</title>
+    <style>
+        table {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid hsla(0, 0%, 17%, 1);
+            text-align: left;
+        }
+
+        th {
+            padding: 15px 10px;
+            background-color: hsla(330, 100%, 71%, 1);
+            color: hsla(0, 0%, 17%, 1);
+        }
+
+        tr:nth-child(even) {
+            background-color: hsla(0, 0%, 74%, 0.2);
+        }
+
+        tr:hover {
+            background-color: hsla(330, 100%, 71%, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Date of Birth</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Loretta Silva</td>
+                <td>Anguilla</td>
+                <td>8/11/1985</td>
+            </tr>
+            <tr>
+                <td>Joel Montgomery</td>
+                <td>Nigeria</td>
+                <td>1/1/1966</td>
+            </tr>
+            <tr>
+                <td>Joel Brady</td>
+                <td>South Georgia &amp; South Sandwich Islands</td>
+                <td>11/29/1960</td>
+            </tr>
+            <tr>
+                <td>Brent Kim</td>
+                <td>Sudan</td>
+                <td>7/21/1971</td>
+            </tr>
+            <tr>
+                <td>Marie Abbott</td>
+                <td>Ecuador</td>
+                <td>10/27/1967</td>
+            </tr>
+            <tr>
+                <td>Alvin Carter</td>
+                <td>Åland Islands</td>
+                <td>1/8/1977</td>
+            </tr>
+            <tr>
+                <td>Hilda Carter</td>
+                <td>Colombia</td>
+                <td>8/18/1959</td>
+            </tr>
+            <tr>
+                <td>Jason Cohen</td>
+                <td>Ecuador</td>
+                <td>5/12/1953</td>
+            </tr>
+            <tr>
+                <td>Clara Jensen</td>
+                <td>South Sudan</td>
+                <td>2/2/1986</td>
+            </tr>
+            <tr>
+                <td>Hallie Fields</td>
+                <td>Jordan</td>
+                <td>3/24/1960</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

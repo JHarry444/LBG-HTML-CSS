@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14 - Responsive Images</title>
+</head>
+<body>
+    <article>
+        <img src="baboon1x.jpg" alt="Baboon" srcset="baboon1x.jpg 1x, baboon2x.jpg 2x">
+    </article>
+    <article>
+        <picture>
+            <source media="(min-width:1024px)" srcset="kitten-large.png">   
+            <source media="(min-width: 667px)" srcset="kitten-medium.png">
+            <img src="kitten-small.png" alt="Cute Kitten">
+        </picture>
+    </article>
+    <article>
+        <img src="small.jpg" alt="Cute Kitten" sizes="50vw" srcset="kitten-small.png 500w, kitten-medium.png 1000w, kitten-large.png 1500w">
+    </article>
+</body>
+</html>

@@ -3,24 +3,25 @@
 <head>
     <title>Quick Lab 6 - CSS Selectors</title>
     <style>
-        { color : fuchsia; }             /** Anything emphasised **/
-        {color : midnightblue; }       /** Anything emphasised inside a paragraph **/
-        { color : purple; }   /** Any footer that is a direct child of body **/
-        {color : teal; }             /** Any paragraph that is a direct sibling of a heading 1 **/
-        {color : yellow; }           /** Any paragraph that is a younger sibling of a heading 1 **/
-        {color: navy; }       /** Any paragraph that has a class of interactive **/
-        {color: red;}              /** An element with an id of special **/
+        em { color : fuchsia; }             /** Anything emphasised **/
+        p em {color : midnightblue; }       /** Anything emphasised inside a paragraph **/
+        body > footer { color : purple; }   /** Any footer that is a direct child of body **/
+        h1+p {color : teal; }             /** Any paragraph that is a direct sibling of a heading 1 **/
 
-        {  /** Any articles, headers, navs, uls, lis and footers **/
+        h1~p{color : yellow; }           /** Any paragraph that is a younger sibling of a heading 1 **/
+        p.interactive {color: navy; }       /** Any paragraph that has a class of interactive **/
+        #special{color: red;}              /** An element with an id of special **/
+
+        article, header, nav, ul, li, footer{  /** Any articles, headers, navs, uls, lis and footers **/
             margin:1em;
             padding:1em;
             outline:4px dashed black;
         }
-        {                                     /** Any links **/
+        a {                                     /** Any links **/
             color: blue;
         }
 
-        {                                 /** Any unordered list that is a child of a nav **/
+        nav ul{                                 /** Any unordered list that is a child of a nav **/
             list-style:none;
         }
 
@@ -49,14 +50,16 @@
     <header>
         <h1>Header</h1>
         <nav>
-            <ul>
-                <li><a href="#item1">Item 1</a></li>
-                <li><a href="#item2">Item 2</a></li>
-                <li><a href="#item3">Item 3</a></li>
-                <li><a href="#item4">Item 4</a></li>
-                <li><a href="#item5">Item 5</a></li>
-                <li><a href="#item6">Item 6</a></li>
-            </ul>
+            <section>
+                <ul>
+                    <li><a href="#item1">Item 1</a></li>
+                    <li><a href="#item2">Item 2</a></li>
+                    <li><a href="#item3">Item 3</a></li>
+                    <li><a href="#item4">Item 4</a></li>
+                    <li><a href="#item5">Item 5</a></li>
+                    <li><a href="#item6">Item 6</a></li>
+                </ul>
+            </section>
         </nav>
     </header>
     <article>
